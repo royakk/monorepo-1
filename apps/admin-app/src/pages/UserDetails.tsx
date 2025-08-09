@@ -15,7 +15,7 @@ import { useTranslation } from "react-i18next";
 import { useGetUserQuery } from "@shared/store";
 import { LoadingState, ErrorState } from "@shared/ui";
 
-export const UserDetails: React.FC = () => {
+const UserDetails: React.FC = () => {
   const { t } = useTranslation();
   const { id } = useParams<{ id: string }>();
 
@@ -151,3 +151,4 @@ export const UserDetails: React.FC = () => {
     </Container>
   );
 };
+export default UserDetails;

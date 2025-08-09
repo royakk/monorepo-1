@@ -21,7 +21,7 @@ import { useTranslation } from "react-i18next";
 import { useGetUsersQuery } from "@shared/store";
 import { LoadingState, ErrorState, EmptyState } from "@shared/ui";
 
-export const Users: React.FC = () => {
+const Users: React.FC = () => {
   const { t } = useTranslation();
   const [page, setPage] = useState(1);
 
@@ -146,3 +146,4 @@ export const Users: React.FC = () => {
     </Container>
   );
 };
+export default Users;
